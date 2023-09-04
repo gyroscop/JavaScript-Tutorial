@@ -5,6 +5,8 @@ There are two ways to declare objects
 1. Object Literals
 
 2. Object.create (constructor way , singleton)
+ or 
+ const obj = new Object();
 
 */
 
