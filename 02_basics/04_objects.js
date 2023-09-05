@@ -66,6 +66,11 @@ users[1].email
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
+/*
+Object de-structure
+
+
+
 const course = {
   coursename: "js in hindi",
   price: "999",
@@ -78,3 +83,21 @@ const { courseInstructor: instructor } = course;
 
 // console.log(courseInstructor);
 console.log(instructor);
+
+
+*/
+
+/*
+JSON API
+
+APIs are used to extract data in array or object form
+
+*/
+
+api = {
+  name: "Dibya",
+  occuaption: "TCS",
+  risk_score: 5,
+};
+
+console.log(api.name);
