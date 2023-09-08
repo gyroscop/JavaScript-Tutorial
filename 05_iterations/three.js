@@ -51,6 +51,8 @@ for ([key, value] in obj) {
 Note : 
 
 
- for of works for maps , not for objects
+for of works for maps , not for objects
+
+for in works for ojects , not for maps
 
 */

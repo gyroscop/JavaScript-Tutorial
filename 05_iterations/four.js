@@ -9,7 +9,7 @@ const myObj = {
 };
 
 for (const key in myObj) {
-  console.log(`${key} is shortcut for ${myObj[key]}`);
+  // console.log(`${key} is shortcut for ${myObj[key]}`);
 }
 
 //map
@@ -26,10 +26,30 @@ for (const key in map) {
 }
 */ //// does not work
 
+// arrays
+
+const programming_languages = ["JavaScript", "HTML", "CSS"];
+
+for (const language in programming_languages) {
+  console.log(programming_languages[language]);
+}
+
+// for (const language of programming_languages) {
+//   console.log(language);
+// }
+
+/*
+In for in loop console.log[key] outputs keys only , to get values we need to use Obj[key]
+In for of loop console.log[key] outputs values itself
+
+*/
+
 /*
  
 Note :
  
 for of works for maps , not for objects
+
+for in works for ojects , not for maps
 
 */
