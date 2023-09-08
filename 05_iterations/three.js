@@ -44,4 +44,13 @@ const obj = {
 
 for ([key, value] in obj) {
   console.log(key, " :- ", value);
-}
+} ////does not work
+
+/*
+
+Note : 
+
+
+ for of works for maps , not for objects
+
+*/
