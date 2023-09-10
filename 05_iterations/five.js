@@ -22,6 +22,29 @@
 // coding.forEach(printMe);
 
 
+
+//// return in forEach
+const coding = ["js", "ruby", "java", "python", "cpp"];
+
+const codes = coding.forEach((language) => {
+  return language;
+});
+
+console.log(codes); /// forEach does not return any values
+
+
+///hack
+
+const coding = ["js", "ruby", "java", "python", "cpp"];
+
+const coding_copy = [];
+
+coding.forEach((language) => {
+  coding_copy.push(language);
+});
+
+console.log(coding_copy);
+
 */
 
 /*
