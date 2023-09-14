@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit and remove elements in DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>Java</li>
+    </ul>
+  </body>
+  <script>
+    /// Type 1
+    function addLanguage(langName) {
+      ///create element
+      const li = document.createElement("li");
+      // assign vale
+      li.innerHTML = `${langName}`;
+      //add to language class
+      document.querySelector(".language").appendChild(li);
+    }
+
+    /// Type 2
+
+    function addOptimizedLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+
+    addLanguage("Python");
+    addLanguage("JavaScript");
+    addOptimizedLanguage("GoLang");
+
+    //Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // console.log(secondLang);
+    // secondLang.innerHTML = "Ruby";
+
+    const secondLi = document.createElement("li");
+    secondLi.textContent = "Ruby";
+    secondLang.replaceWith(secondLi);
+
+    // Edit (Type 2)
+    const firstLang = document.querySelector("li:first-child");
+    //firstLang.innerHTML = "TypeScript";
+    firstLang.outerHTML = "<li>TypeScript</li>";
+
+    //remove
+
+    const lastLang = document.querySelector("li:nth-child(2)");
+    lastLang.remove();
+  </script>
+</html>
