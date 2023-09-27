@@ -1,0 +1,32 @@
+body {
+  background-color: gray;
+}
+
+#timer {
+  color: white;
+  font: bold;
+  font-size: larger;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 576px;
+}
+
+#clock {
+  border-style: groove;
+  border-color: brown;
+  padding: 10px 50px;
+  margin-left: 20px;
+}
+
+#stop {
+  border-style: double;
+  border-color: black;
+  color: white;
+  font: bold;
+  padding: 5px 10 px;
+  margin-top: 40px;
+  background-color: red;
+}
