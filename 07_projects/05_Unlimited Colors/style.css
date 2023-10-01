@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Young+Serif&display=swap");
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.pcb {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 40%;
+  margin-bottom: 50px;
+}
+
+#light {
+  color: aliceblue;
+  font-family: "Rubik", sans-serif;
+  font-family: "Young Serif", serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
